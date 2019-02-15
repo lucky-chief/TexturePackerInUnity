@@ -5,50 +5,13 @@ using UnityEditor;
 
 public class UIComponentMenuItemEditor : ScriptableObject
 {
-    [MenuItem("GameObject/UI/17zuoye-UIImage", false)]
+    [MenuItem("GameObject/UI/UIImage", false)]
     static public void AddUICircle(MenuCommand menuCommand)
     {
         GameObject go = CreateUIElementRoot("UI Image", menuCommand, s_ImageGUIElementSize);
         go.AddComponent<UIImage>();
         Selection.activeGameObject = go;
     }
-
-    //[MenuItem("GameObject/UI/17zuoye-UI Round Corner RawImage", false)]
-    //static public void AddRoundCornerRawImage(MenuCommand menuCommand)
-    //{
-    //    GameObject go = CreateUIElementRoot("UI Round Corner RawImage", menuCommand, s_ImageGUIElementSize);
-    //    go.AddComponent<RoundCornerRawImage>();
-    //    Selection.activeGameObject = go;
-    //}
-
-    //[MenuItem("GameObject/UI/17zuoye-UIStroke", false)]
-    //static public void AddUIStroke(MenuCommand menuCommand)
-    //{
-    //    GameObject go = CreateUIElementRoot("UIStroke", menuCommand, s_ImageGUIElementSize);
-    //    go.AddComponent<UIStroke>();
-    //    Selection.activeGameObject = go;
-    //}
-
-    //[MenuItem("GameObject/UI/17zuoye-UILine", false)]
-    //static public void AddUILine(MenuCommand menuCommand)
-    //{
-    //    GameObject go = CreateUIElementRoot("UILine", menuCommand, s_ImageGUIElementSize);
-    //    go.AddComponent<UILine>();
-    //    Selection.activeGameObject = go;
-    //}
-
-    //[MenuItem("GameObject/UI/17zuoye-UI Polygon Raycast Target", false)]
-    //public static void AddUIPolygonRaycastTarget(MenuCommand menuCommand)
-    //{
-    //    GameObject go = CreateUIElementRoot("UIPolygonRaycastTarget", menuCommand, s_ImageGUIElementSize);
-    //    var rectTransform = go.transform as RectTransform;
-    //    rectTransform.anchorMin = Vector2.zero;
-    //    rectTransform.anchorMax = Vector2.one;
-    //    rectTransform.offsetMin = Vector2.zero;
-    //    rectTransform.offsetMax = Vector2.zero;
-    //    go.AddComponent<UIPolygonRaycastTarget>();
-    //    Selection.activeGameObject = go;
-    //}
 
     #region Unity Builder section  - Do not change unless UI Source (Editor\MenuOptions) changes
     #region Unity Builder properties  - Do not change unless UI Source (Editor\MenuOptions) changes

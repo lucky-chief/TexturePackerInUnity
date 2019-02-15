@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-[AddComponentMenu("UI/17zuoye/UIImage")]
+[AddComponentMenu("UI/UIImage")]
 public class UIImage : Image
 {
     public Texture _atlasTexture;
